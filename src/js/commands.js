@@ -22,7 +22,8 @@ function clear(args) {
     document.getElementById('wrapper').innerHTML = "";
 }
 
-
-
-
-
+h = help;
+function help(args) {
+    block_log("Список команд: " + g + ", " + time + ", " + cls + ", " + h);
+    
+}
