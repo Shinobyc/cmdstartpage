@@ -1,7 +1,7 @@
 :root {
-    --main-bg-color: #FAE3B0;
-    --prompt-bg-color: #1E1E2E;
-    --text-color: #FAE3B0;
+        --main-bg-color: #1A1826;
+        --prompt-bg-color: #C3BAC6;
+        --text-color: #1A1826;
 }
 
 * {
