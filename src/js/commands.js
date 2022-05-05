@@ -33,11 +33,22 @@ function reddit(args) {
 }
 
 //Github search(!)
+gits = git_search
+function git_search(args){
+    if (args != undefined) {
+        search = args.replace(" ", "")
+        window.open("https://github.com/search?q=" + search)
+    }
+    else {
+        window.open("https://www.github.com/");
+    }
+}
+
 git = github
 function github(args) {
     if (args != undefined) {
         search = args.replace(" ", "")
-        window.open("https://www.github.com/search?q=" + search);
+        window.open("https://github.com/" + search)
     }
     else {
         window.open("https://www.github.com/");
@@ -60,22 +71,16 @@ function clear(args) {
 // Manga
 mg = manga
 function manga(args) {
-    if (args == " mangadex") {
+    if (args == " dex") {
         window.open("https://www.mangadex.org");
     }
-    else {
-        if (args == " mangalib") {
+    else if (args == " lib") {
             window.open("https://www.mangalib.me");
         }
-        else {
-            if (args == " readmanga") {
-                window.open("https://www.readmanga.me");
+        else  if (args == " read") {
+                window.open("https://www.readmanga.io");
             }
-            else {
-                if (args != undefined) {
+            else if (args != undefined) {
                     block_log("site not found");
                 }
-            }
-        }
-    }
 }
