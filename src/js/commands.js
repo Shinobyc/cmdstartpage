@@ -91,6 +91,11 @@ function manga(args) {
 
 site = url;
 function url(args) {
-    url = args.replace(" ", "")
-    window.open(url);
+    if (args != undefined) {
+        search = args.replace(" ", "")
+        window.open("https://" + search);
+    }
+    else {
+        block_log("please, enter normal url");
+    }
 }
