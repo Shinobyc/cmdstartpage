@@ -48,7 +48,7 @@ git = github
 function github(args) {
     if (args != undefined) {
         search = args.replace(" ", "")
-        window.open("https://github.com/" + search)
+        window.open("https://github.com/" + search);
     }
     else {
         window.open("https://www.github.com/");
@@ -81,7 +81,7 @@ function manga(args) {
                 window.open("https://www.readmanga.io");
             }
             else if (args != undefined) {
-                    block_log("site not found")
+                    block_log("site not found");
                     block_log("use 'manga help' for information");
                 }
                 else if (args == " help") {
@@ -93,5 +93,8 @@ function url(args) {
     if (args != undefined) {
         url = args.replace(" ", "")
         window.open(url);
+    }
+    else {
+        block_log("please, enter normal url");
     }
 }
