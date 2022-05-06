@@ -89,12 +89,8 @@ function manga(args) {
                 }
 }
 
+site = url;
 function url(args) {
-    if (args != undefined) {
-        url = args.replace(" ", "")
-        window.open(url);
-    }
-    else {
-        block_log("please, enter normal url");
-    }
+    url = args.replace(" ", "")
+    window.open(url);
 }
