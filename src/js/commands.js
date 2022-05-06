@@ -81,6 +81,17 @@ function manga(args) {
                 window.open("https://www.readmanga.io");
             }
             else if (args != undefined) {
-                    block_log("site not found");
+                    block_log("site not found")
+                    block_log("use 'manga help' for information");
                 }
+                else if (args == " help") {
+                    block_log("dex = mangadex, lib = mangalib, read = readmanga");
+                }
+}
+
+function url(args) {
+    if (args != undefined) {
+        url = args.replace(" ", "")
+        window.open(url);
+    }
 }
